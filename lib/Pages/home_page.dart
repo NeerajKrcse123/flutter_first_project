@@ -1,8 +1,6 @@
 import "package:flutter/material.dart";
 
 class Homepage extends StatelessWidget {
-// Homepage({super.key});
-
   @override
   Widget build(BuildContext context) {
     final name = "codepur";
@@ -14,7 +12,7 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("welcome to days $days  of flutter by $name"),
+          child: Text("welcome to $days days  of flutter by $name"),
         ),
       ),
       drawer: Drawer(),
