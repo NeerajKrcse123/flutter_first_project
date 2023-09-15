@@ -39,7 +39,7 @@ class _LoginpageState extends State<Loginpage> {
                     SizedBox(
                       height: 30.0,
                     ),
-                    //  sized box provide the space between image and the text welcome of height 5o
+                    //  sized box provide the space between image and the text welcome of height 30
                     Text(
                       "Welcome $name",
                       style: TextStyle(
