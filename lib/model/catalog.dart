@@ -1,3 +1,16 @@
+class CatalogModel {
+  final items = [
+    Item(
+      id: "1",
+      name: "iPhone 12 Pro",
+      desc: "Apple iPhone 12th generation",
+      color: "33505a",
+      image: "iphone-12-pro-blue-hero.jpg",
+      price: "999.99",
+    ),
+  ];
+}
+
 class Item {
   final String? id;
   final String? name;
@@ -14,14 +27,3 @@ class Item {
       this.color,
       this.image}); // this is a constructor
 }
-
-final products = [
-  Item(
-    id: "neeraj001",
-    name: "iPhone 12 Pro",
-    desc: "Apple iPhone 12th generation",
-    color: "33505a",
-    image: "iphone12.jpg",
-    price: "999.99",
-  ),
-];
