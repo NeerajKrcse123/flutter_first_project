@@ -1,0 +1,21 @@
+{
+    "products":[
+{
+    "id":1,
+    "name":"iphone 12 pro",
+    "desc":"Apple iphone 12th generation",
+    "price":999,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
+},
+{
+    "id":2,
+    "name":"another product",
+    "desc":"Apple iphone 12th generation",
+    "price":540,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
+}
+
+    ]
+}
