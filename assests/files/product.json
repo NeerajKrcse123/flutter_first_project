@@ -15,7 +15,56 @@
     "price":540,
     "color":"#33505a",
     "image": "iphone-12-pro-blue-hero.jpg"
+},
+{
+    "id":3,
+    "name":"xyz",
+    "desc":"......",
+    "price":876,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
+},
+{
+    "id":4,
+    "name":"another product",
+    "desc":"Apple iphone 12th generation",
+    "price":540,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
+},
+{
+    "id":5,
+    "name":"another product",
+    "desc":"Apple iphone 12th generation",
+    "price":540,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
+},
+{
+    "id":6,
+    "name":"another product",
+    "desc":"Apple iphone 12th generation",
+    "price":540,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
+},
+{
+    "id":7,
+    "name":"another product",
+    "desc":"Apple iphone 12th generation",
+    "price":540,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
+},
+{
+    "id":8,
+    "name":"another product",
+    "desc":"Apple iphone 12th generation",
+    "price":540,
+    "color":"#33505a",
+    "image": "iphone-12-pro-blue-hero.jpg"
 }
+
 
     ]
 }

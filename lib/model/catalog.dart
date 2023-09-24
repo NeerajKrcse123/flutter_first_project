@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 import 'package:collection/collection.dart';
@@ -23,24 +22,7 @@ class Item {
     this.color,
     this.image
   });
-  // factory Item.fromMap(Map<String, dynamic> map) {
-  //   return Item(
-  //     id: map['id'].toString(),
-  //     name: map['name'] ?? "",
-  //     desc: map['desc'] ?? "",
-  //     price: (map['price'] ?? 0).toDouble(), 
-  //     color: map['color'] ?? "",
-  //     image: map['image'] ?? "",
-  //   );
-  // }
-  // toMap() => {
-  //       "id": id,
-  //       "name": name,
-  //       "desc": desc,
-  //       "price": price,
-  //       "color": color,
-  //       "image": image
-  //     };
+ 
   
 
   Item copyWith({

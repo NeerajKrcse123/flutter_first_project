@@ -22,6 +22,7 @@ class _HomepageState extends State<Homepage> {
 loadData() async {
   try {
     final productJson = await rootBundle.loadString("assests/files/product.json");
+        
     final decodedData = jsonDecode(productJson);
     final List<Item> items = List<Map<String, dynamic>>.from(decodedData["products"])
         .map<Item>((item) => Item.fromMap(item))
@@ -30,6 +31,8 @@ loadData() async {
     setState(() {
       catalog.items = items;
     });
+     print("Product JSON: $productJson");
+   
   } catch (e) {
     print("Error loading data: $e");
   }
@@ -48,13 +51,60 @@ loadData() async {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ListView.builder(
+        child:(catalog.items!= null && catalog.items.isNotEmpty)?
+         GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 16,crossAxisSpacing: 16),
           itemCount: catalog.items.length,
           itemBuilder: (context, index) {
-            // final item = catalog.items[index];
-            return ItemWidget(item: catalog.items[index]);
+            final item = catalog.items[index];
+            print(item);
+                   final imageName = item.image; // Assuming this field contains image file names
+
+                  // if (imageName != null && imageName.isNotEmpty) {
+                    // Check if imageName is not null and not empty
+  return Card(
+  clipBehavior: Clip.antiAlias,
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(10),
+  ),
+  child: GridTile(
+    header: Container(
+      child: Text(
+        item.name.toString(),
+        style: TextStyle(color: Colors.white),
+      ),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(color: Colors.deepPurple),
+    ),
+    footer: Container(
+      child: Text(
+        item.price.toString(),
+        style: TextStyle(color: Colors.white),
+      ),
+      padding: const EdgeInsets.all(12), // Use only one padding argument
+      decoration: BoxDecoration(color: Colors.black),
+    ),
+    child: Image(
+      image: AssetImage("assests/images/$imageName"), // Adjust the path as needed
+    ),
+  ),
+);
+
+
+                  // } 
+                  // else {
+                  //   // Handle cases where imageName is null or empty
+                  //   return GridTile(
+                  //     child: Text("No Image Available"),
+                  //   );
+                  // }   
+           
+            // return ItemWidget(item: catalog.items[index]);
           },
-        ),
+        )
+        :Center(
+          child: CircularProgressIndicator(),
+        )
       ),
       drawer: MyDrawer(),
     );
