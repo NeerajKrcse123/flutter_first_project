@@ -89,17 +89,6 @@ loadData() async {
     ),
   ),
 );
-
-
-                  // } 
-                  // else {
-                  //   // Handle cases where imageName is null or empty
-                  //   return GridTile(
-                  //     child: Text("No Image Available"),
-                  //   );
-                  // }   
-           
-            // return ItemWidget(item: catalog.items[index]);
           },
         )
         :Center(
